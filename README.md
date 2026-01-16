@@ -1,6 +1,6 @@
 # Modification and Implementeation of the Arduino Uno PedalShield 
 
-<img src="images/Pedal.jpg" alt="Diagram" width="400">
+<img src="Pedal.jpg" alt="Diagram" width="400">
 
 Figure 1: Working prototype in action.
 
@@ -20,7 +20,7 @@ In this file, however, I will be concise in what modifications I made to the ori
 
 I will upload a file with the analysis soon to this repo. In the meantime here is a list of what I think the requirements should be:
 ## Main requirements summarized:
-- [[Input Stage]]
+- Input Stage
 	- Since the sampling frequency is set to fs​≈31.25kHz, we need to filter frequencies above 15.6 kHz to avoid aliasing. And the guitar frequency can range from 82 to 5kHz. So the required cutoff frequency of the low pass filter can be narrowed down to 5 kHz.
 	- The guitar signal is boosted from around one 1dB-21dB in the original design.
 	
@@ -31,11 +31,11 @@ I will upload a file with the analysis soon to this repo. In the meantime here i
 ## Key Modification to the Original Design
 
 - Fix one issue with the original design:
-	1) ~={green}Changed the capacitors $C_7$, $C_8$, $C_9$ to 2.2 nF=~: In the original design, the cutoff frequency of the output low pass filter is not the desired 5 kHz. Therefore I change the $RC = \frac{2 \pi}{1675}\approx 0.00375$. So If I use Resistor equal to 4.7 k ohms then C must be around $2.2 n F$. For a slightly lower cutoff frequency C can be higher.
+	1) Changed the capacitors $C_7$, $C_8$, $C_9$ to 2.2 nF: In the original design, the cutoff frequency of the output low pass filter is not the desired 5 kHz. Therefore I change the $RC = \frac{2 \pi}{1675}\approx 0.00375$. So If I use Resistor equal to 4.7 k ohms then C must be around $2.2 n F$. For a slightly lower cutoff frequency C can be higher.
 
 ## Implementation notes
 
-<img src="images/PCB_PedalShield.png" alt="PCB" width="400">
+<img src="PCB_PedalShield.png" alt="PCB" width="400">
 figure 2: The PCB I designed in KiCad. Note that I fliped the name of the Input and Output Jacks; it should be the other way around.
 
 I designed the PCB in KiCad and since it is the first prototype I omitted some non-essential aspects of the design to make it simpler for myself:
