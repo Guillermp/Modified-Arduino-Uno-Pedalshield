@@ -1,6 +1,7 @@
 # Modification and Implementeation of the Arduino Uno PedalShield 
 
-![[Pedal.jpg|300]]
+<img src="images/Pedal.jpg" alt="Diagram" width="400">
+
 Figure 1: Working prototype in action.
 
 # Motivation & Overview
@@ -34,7 +35,7 @@ I will upload a file with the analysis soon to this repo. In the meantime here i
 
 ## Implementation notes
 
-![[PCB_PedalShield.png]]
+<img src="images/PCB_PedalShield.png" alt="PCB" width="400">
 figure 2: The PCB I designed in KiCad. Note that I fliped the name of the Input and Output Jacks; it should be the other way around.
 
 I designed the PCB in KiCad and since it is the first prototype I omitted some non-essential aspects of the design to make it simpler for myself:
