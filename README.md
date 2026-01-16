@@ -1,4 +1,4 @@
-# Modification and Implementeation of the Arduino Uno PedalShield 
+# Modification and Implementation of the Arduino Uno PedalShield 
 
 <img src="Pedal.jpg" alt="Diagram" width="400">
 
